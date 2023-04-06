@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a74574a9.css",
+    "main.js": "/static/js/main.40a81d5c.js",
+    "static/js/787.6d366c5e.chunk.js": "/static/js/787.6d366c5e.chunk.js",
+    "static/media/art2.webp": "/static/media/art2.5781811be2b55005e026.webp",
+    "static/media/art6.webp": "/static/media/art6.309dd1ca70d315c1817e.webp",
+    "static/media/art11.webp": "/static/media/art11.b5ba72572ca2b8cae3b7.webp",
+    "static/media/art8.webp": "/static/media/art8.b0d56db94be6ba710843.webp",
+    "static/media/art12.webp": "/static/media/art12.8687fd04c4e16ffcec32.webp",
+    "static/media/art13.webp": "/static/media/art13.bcc3a92469808626a4d8.webp",
+    "static/media/art9.webp": "/static/media/art9.6f370f745efad80891ad.webp",
+    "static/media/art1.webp": "/static/media/art1.59a719d734d4dd43e572.webp",
+    "static/media/art3.webp": "/static/media/art3.601a357e116eb5630185.webp",
+    "static/media/art4.webp": "/static/media/art4.e4d637700f5f290eec93.webp",
+    "static/media/art10.webp": "/static/media/art10.cdaaecf9507b6871a6a9.webp",
+    "static/media/art14.webp": "/static/media/art14.f8ea95f94f4ee41bd4e2.webp",
+    "static/media/art7.webp": "/static/media/art7.d1000e71decb8729396f.webp",
+    "static/media/art5.webp": "/static/media/art5.7c13a009946909523e13.webp",
+    "static/media/newsweek-logo.png": "/static/media/newsweek-logo.104d533fc9cd4c377bbb.png",
+    "static/media/newsweek-footer-logo.svg": "/static/media/newsweek-footer-logo.abd0e11123161cb9b81bdb7b5b943650.svg",
+    "static/media/search-icon-nav.svg": "/static/media/search-icon-nav.9623745dd777f6fc778c6992110491fd.svg",
+    "index.html": "/index.html",
+    "static/media/navDots.svg": "/static/media/navDots.10029fb18230273fb6ac0fd79df9900a.svg",
+    "main.a74574a9.css.map": "/static/css/main.a74574a9.css.map",
+    "main.40a81d5c.js.map": "/static/js/main.40a81d5c.js.map",
+    "787.6d366c5e.chunk.js.map": "/static/js/787.6d366c5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a74574a9.css",
+    "static/js/main.40a81d5c.js"
+  ]
+}
