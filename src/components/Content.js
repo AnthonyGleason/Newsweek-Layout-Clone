@@ -46,7 +46,7 @@ export default function Content(){
         }
       </div>
       <div className='section-six'>
-        <ul className='page-numbers'>
+        <ul className='page-numbers pointer'>
           <li>1</li>
           <li>2</li>
           <li>3</li>
@@ -57,7 +57,7 @@ export default function Content(){
           <li>8</li>
           <li>9</li>
         </ul>
-        <div className='page-next'>{'NEXT >'}</div>
+        <div className='page-next pointer'>{'NEXT >'}</div>
       </div>
     </div>
   )

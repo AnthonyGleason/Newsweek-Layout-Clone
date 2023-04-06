@@ -1,93 +1,104 @@
-.content{
+.content {
   background-color: white;
+  margin: 0% 13% 3.5% 13%;
 }
-/*
-  set media query so if a mobile/tablet user is viewing the content is all aligned vertically
-  in one column.
-*/
-@media only screen and (max-width: 1210px) {
-  .section-one{
-    display: flex;
-    justify-content: center;
-  }
-  .section-two{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .section-three{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-  .section-four{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .section-five{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-  .content{
-    margin: 0% 5% 3.5% 5%;
-  }
-}
-@media only screen and (min-width: 1211px){
-  .section-one{
-    display: flex;
-    justify-content: center;
-  }
-  .section-two{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .section-three{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .section-four{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .section-five{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .content{
-    margin: 0% 13% 3.5% 13%;
-  }
-}
-.section-one{
+
+.section-one {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin: 30px;
 }
-.section-one div{
+
+.section-one div {
   color: #444;
   font-size: 36px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
-.section-one img{
+
+.section-one img {
   width: 30px;
   height: 30px;
 }
-.section-four{
+
+@media only screen and (max-width: 1210px) {
+  .section-one {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-two {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .section-three {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .section-four {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .section-five {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .content {
+    margin: 0% 5% 3.5% 5%;
+  }
+}
+
+@media only screen and (min-width: 1211px) {
+  .section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .section-five {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .section-four {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .content {
+    margin: 0% 13% 3.5% 13%;
+  }
+}
+
+.section-four {
   gap: 30px;
   margin: 30px;
 }
-.section-five{
+
+.section-five {
   margin-bottom: 30px;
 }
-.section-six{
+
+.section-six {
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 1.5px solid #ebeaea;
-  padding: 40px 0px 40px 0px; 
+  padding: 40px 0px 40px 0px;
   margin: 0px 40px 30px 40px;
 }
-.section-six ul{
+
+.section-six ul {
   display: flex;
   list-style: none;
   flex-grow: 1;
@@ -95,26 +106,30 @@
   font-weight: 700;
   gap: 20px;
 }
+
 .section-six ul li:first-child {
   color: #f72210;
 }
+
 @media only screen and (max-width: 501px) {
-  .page-next{
+  .page-next {
     font-size: 12px;
     padding: 5px;
   }
-  .section-six ul{
+
+  .section-six ul {
     flex-grow: 1;
     justify-content: center;
     font-weight: 700;
     gap: 12px;
   }
 }
-.page-next{
+
+.page-next {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1.5px solid  #c4c4c4;
+  border: 1.5px solid #c4c4c4;
   padding: 15px;
   margin-left: 10px;
   white-space: nowrap;

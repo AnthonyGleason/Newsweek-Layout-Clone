@@ -1,93 +1,31 @@
-.article{
+.article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 5px;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
-  .article-title{
-  font-size: 20px;
-  }
-}
-  
-@media only screen and (min-width: 1367px) and (max-width: 1800px) {
-  .article-title{
-  font-size: 24px;
-  }
-}
-  
-@media only screen and (min-width: 1801px){
-  .article-title{
-  font-size:30px;
-  height: 150px;
-  }
-}
-@media only screen and (max-width: 501px) {
-  .article-desc{
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 1206px) {
-  .article-title {
-    height: 50px;
-  }
-  .article-desc{
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media only screen and (min-width: 1207px){
-  /* if the user is on a desktop display the alertnative article styling in section 4 */
-  .article-alt{
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr 1fr;
-    grid-template-areas: 
-    "img category"
-    "img title"
-    "img desc";
-  }
-  .article-alt .article-title{
-    grid-area: title;
-    height: max-content;
-    text-align: left;
-    justify-self: flex-start;
-    align-self: flex-start;
-  }
-  .article-alt .article-category{
-    grid-area: category;
-    height: max-content;
-    margin-top: 0;
-    justify-self: flex-start;
-  }
-  .article-alt .article-desc{
-    grid-area: desc;
-    height: max-content;
-    text-align: left;
-  }
-  .article-alt .article-img{
-    grid-area: img;
-  }
-}
+
 .article-title {
   text-align: center;
   padding: 10px;
 }
-.article-desc{
+
+.article-desc {
   height: 90px;
   text-align: center;
   margin: 10px;
 }
+
 .article-img {
-  height: 400px; 
+  height: 400px;
   width: 95%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.article-category{
+.article-category {
   background-color: white;
   margin-top: -20px;
   padding: 10px 10px 10px 10px;
@@ -98,4 +36,76 @@
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+}
+/* adjusts article desc to a smaller font size on mobile devices */
+@media only screen and (max-width: 501px) {
+  .article-desc {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1206px) {
+  .article-title {
+    height: 50px;
+  }
+
+  .article-desc {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  .article-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1800px) {
+  .article-title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  .article-title {
+    font-size: 30px;
+    height: 150px;
+  }
+}
+/* alternate article styling is used to display the vertical styling in section 4 if the user is on a desktop */
+@media only screen and (min-width: 1207px) {
+  .article-alt {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
+    grid-template-areas: 
+    "img category"
+    "img title"
+    "img desc";
+  }
+
+  .article-alt .article-title {
+    grid-area: title;
+    height: max-content;
+    text-align: left;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .article-alt .article-category {
+    grid-area: category;
+    height: max-content;
+    margin-top: 0;
+    justify-self: flex-start;
+  }
+
+  .article-alt .article-desc {
+    grid-area: desc;
+    height: max-content;
+    text-align: left;
+  }
+
+  .article-alt .article-img {
+    grid-area: img;
+  }
 }

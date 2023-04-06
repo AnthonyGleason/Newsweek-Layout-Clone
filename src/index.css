@@ -17,3 +17,10 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+.pointer{
+  cursor:pointer;
+}
+.underline:hover {
+  text-decoration: underline #f72210;
+}

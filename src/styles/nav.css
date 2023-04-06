@@ -1,96 +1,109 @@
-.nav{
-  display: flex;
-  height: 4vh;
-  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-  background-color: white;
-  top: 0;
+.nav {
   position: sticky;
+  top: 0;
+  height: 4vh;
+  background-color: white;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  display: flex;
   font-family: 'Roboto', sans-serif;
 }
-.nav-left{
+
+.nav-left {
   flex-grow: 1;
   display: flex;
   align-items: center;
   gap: 15px;
   font-size: 15px;
 }
-.nav-logo{
+
+.nav-logo {
   max-width: 150px;
 }
-.nav-expand-dots{
-  color: red;
-}
-/* Hides the topics in the nav bar  */
+
+/* the buttons only on desktop devices */
 @media only screen and (max-width: 1200px) {
   .nav-left-buttons {
     display: none;
   }
 }
-@media only screen and (min-width: 1201px){
-  .nav-left-buttons{
+
+@media only screen and (min-width: 1201px) {
+  .nav-left-buttons {
     display: flex;
   }
 }
-.nav-left-buttons{
+
+.nav-left-buttons {
   list-style: none;
   gap: 15px;
 }
-.nav-left-buttons li{
+
+.nav-left-buttons li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-left-buttons :nth-child(8){
+
+.nav-left-buttons :nth-child(8) {
   font-weight: 900;
 }
-.nav-right{
+
+.nav-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
   width: 100%;
 }
-@media only screen and (max-width: 390px) {
-  .nav-login{
+/* hides the login button on smaller mobile devices */
+@media only screen and (max-width: 444px) {
+  .nav-login {
     display: none;
   }
 }
-@media only screen and (min-width: 391px) {
-  .nav-login{
+
+@media only screen and (min-width: 445px) {
+  .nav-login {
     display: flex;
   }
 }
+
+.nav-login {
+  font-weight: 700;
+  font-size: 14px;
+  height: 100%;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1.5px solid #c4c4c4;
+}
+
 @media only screen and (max-width: 440px) {
-  .nav-subscribe{
+  .nav-subscribe {
     font-size: 12px;
   }
 }
+
 @media only screen and (min-width: 441px) {
-  .nav-subscribe{
+  .nav-subscribe {
     font-size: 14px;
   }
 }
-.nav-subscribe{
+
+.nav-subscribe {
   background-color: #ffe400;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 700;
   padding: 10px;
   text-align: center;
 }
-.nav-login{
-  font-weight:700;
-  font-size: 14px;
-  border-right: 1.5px solid #c4c4c4;
-  height: 100%;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 20px;
-}
-.nav-search-icon{
+
+.nav-search-icon {
   padding-right: 20px;
 }
