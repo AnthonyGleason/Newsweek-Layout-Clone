@@ -8,10 +8,10 @@ export default function Article({ title, desc, category, img }) {
 
   return (
     <div className='article'>
-      <div className='article-img' style={background} alt={title}></div>
+      <div className='article-img' style={background} alt={title} />
+      <div className='article-category'>{category}</div>
       <div className='article-title'>{title}</div>
       <div className='article-desc'>{desc}</div>
-      <div className='article-category'>{category}</div>
     </div>
   );
 }

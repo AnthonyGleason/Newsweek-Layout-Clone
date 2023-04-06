@@ -1,12 +1,11 @@
 .content{
-  margin: 0% 5% 3.5% 5%;
   background-color: white;
 }
 /*
-  set media query so if a mobile/tablety user is viewing the content is all aligned vertically
+  set media query so if a mobile/tablet user is viewing the content is all aligned vertically
   in one column.
 */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1210px) {
   .section-one{
     display: flex;
     justify-content: center;
@@ -27,8 +26,11 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+  .content{
+    margin: 0% 5% 3.5% 5%;
+  }
 }
-@media only screen and (min-width: 1051px){
+@media only screen and (min-width: 1211px){
   .section-one{
     display: flex;
     justify-content: center;
@@ -49,8 +51,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .content{
+    margin: 0% 13% 3.5% 13%;
+  }
 }
-
 .section-six{
   display: flex;
 }

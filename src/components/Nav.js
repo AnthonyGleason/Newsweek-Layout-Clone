@@ -12,7 +12,7 @@ export default function Nav(){
         <div className='nav-left-buttons'>
           <li>U.S.</li>
           <li>World</li>
-          <li>Tech & Science</li>
+          <li>Technology</li>
           <li>Culture</li>
           <li>Autos</li>
           <li>Rankings</li>
@@ -22,12 +22,12 @@ export default function Nav(){
           <li>Experts</li>
           <li>Education</li>
         </div>
-        <img src={navDots} alt='three dots' />
+        <img className='nav-expand-dots' src={navDots} alt='three dots' />
       </div>
       <div className='nav-right'>
         <div className='nav-subscribe'>SUBSCRIBE FOR $1</div>
-        <div>Login</div>
-        <img src={searchIcon} alt='magnifying glass' />
+        <div className='nav-login'>Login</div>
+        <img className='nav-search-icon' src={searchIcon} alt='magnifying glass' />
       </div>
     </div>
   )

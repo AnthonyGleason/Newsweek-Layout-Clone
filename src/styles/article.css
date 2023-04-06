@@ -3,11 +3,66 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5px;
 }
-.article-img{
-  max-width: 70%;
-  height: 350px;
-  width: 100%;
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  .article-title{
+  font-size: 20px;
+  }
+}
+  
+@media only screen and (min-width: 1367px) and (max-width: 1800px) {
+  .article-title{
+  font-size: 24px;
+  }
+}
+  
+@media only screen and (min-width: 1801px){
+  .article-title{
+  font-size:30px;
+  }
+}
+/* work on this, this and the next media query should resize the desc box 
+  after fix section four positioning of elements
+*/
+@media only screen and (max-width: 1206px) {
+  .article-title {
+    height: 50px;
+  }
+  .article-desc{
+    font-size: 13px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media only screen and (min-width: 1207px){
+  .article-title {
+    height: 180px;
+  }
+  .article-desc{
+    font-size: 15px;
+  }
+}
+.article-title{
+  text-align: center;
+}
+.article-desc{
+  height: 100px;
+  text-align: center;
+}
+.article-img {
+  height: 400px; 
+  width: 95%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+.article-category{
+  background-color: white;
+  margin-top: -20px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

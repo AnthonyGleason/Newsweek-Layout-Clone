@@ -5,14 +5,20 @@
   background-color: white;
   top: 0;
   position: sticky;
+  font-family: 'Roboto', sans-serif;
 }
 .nav-left{
   flex-grow: 1;
   display: flex;
   align-items: center;
+  gap: 15px;
+  font-size: 15px;
 }
 .nav-logo{
   max-width: 150px;
+}
+.nav-expand-dots{
+  color: red;
 }
 /* Hides the topics in the nav bar  */
 @media only screen and (max-width: 767px) {
@@ -27,14 +33,38 @@
 }
 .nav-left-buttons{
   list-style: none;
+  gap: 15px;
 }
 .nav-right{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
 }
 .nav-subscribe{
   background-color: #ffe400;
   height: 100%;
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+.nav-login{
+  font-weight:700;
+  font-size: 14px;
+  border-right: 1.5px solid #c4c4c4;
+  height: 100%;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.nav-search-icon{
+  padding-right: 20px;
 }
