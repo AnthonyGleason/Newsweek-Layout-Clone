@@ -21,8 +21,8 @@ export default function Nav(){
           <li>Opinion</li>
           <li>Experts</li>
           <li>Education</li>
+          <img className='nav-expand-dots' src={navDots} alt='three dots' />
         </div>
-        <img className='nav-expand-dots' src={navDots} alt='three dots' />
       </div>
       <div className='nav-right'>
         <div className='nav-subscribe'>SUBSCRIBE FOR $1</div>

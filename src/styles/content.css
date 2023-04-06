@@ -1,9 +1,6 @@
 .content{
   background-color: white;
 }
-.content div{
-  padding: 10px;
-}
 /*
   set media query so if a mobile/tablet user is viewing the content is all aligned vertically
   in one column.
@@ -62,6 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  margin: 30px;
 }
 .section-one div{
   color: #444;
@@ -75,12 +74,48 @@
 }
 .section-four{
   gap: 30px;
+  margin: 30px;
+}
+.section-five{
+  margin-bottom: 30px;
 }
 .section-six{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1.5px solid #ebeaea;
+  padding: 40px 0px 40px 0px; 
+  margin: 0px 40px 30px 40px;
 }
 .section-six ul{
   display: flex;
   list-style: none;
+  flex-grow: 1;
+  justify-content: center;
+  font-weight: 700;
+  gap: 20px;
 }
-
+.section-six ul li:first-child {
+  color: #f72210;
+}
+@media only screen and (max-width: 501px) {
+  .page-next{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .section-six ul{
+    flex-grow: 1;
+    justify-content: center;
+    font-weight: 700;
+    gap: 12px;
+  }
+}
+.page-next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid  #c4c4c4;
+  padding: 15px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
