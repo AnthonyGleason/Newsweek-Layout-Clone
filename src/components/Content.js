@@ -20,28 +20,28 @@ export default function Content(){
       <div className='section-two'>
         {
           sectionTwoArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
+            return(<Article key={sectionTwoArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
       </div>
       <div className='section-three'>
         {
           sectionThreeArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
+            return(<Article key={sectionThreeArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
       </div>
       <div className='section-four'>
         {
           sectionFourArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article-alt'/>)
+            return(<Article key={sectionFourArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article-alt'/>)
           })
         }
       </div>
       <div className='section-five'>
         {
           sectionFiveArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
+            return(<Article key={sectionFiveArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
       </div>
