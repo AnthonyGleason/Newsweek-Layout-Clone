@@ -1,0 +1,61 @@
+.content{
+  margin: 0% 5% 3.5% 5%;
+  background-color: white;
+}
+/*
+  set media query so if a mobile/tablety user is viewing the content is all aligned vertically
+  in one column.
+*/
+@media only screen and (max-width: 1050px) {
+  .section-one{
+    display: flex;
+    justify-content: center;
+  }
+  .section-two{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section-three{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .section-four{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section-five{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1051px){
+  .section-one{
+    display: flex;
+    justify-content: center;
+  }
+  .section-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .section-four{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section-five{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.section-six{
+  display: flex;
+}
+.section-six ul{
+  display: flex;
+  list-style: none;
+}
+

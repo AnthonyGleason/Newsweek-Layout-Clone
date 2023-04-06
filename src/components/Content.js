@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from '../components/Article';
+import '../styles/content.css';
 //get article data
 import getArticles from '../scripts/getArticles';
 const articles = getArticles();

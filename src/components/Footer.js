@@ -1,5 +1,6 @@
 import React from 'react';
 import newsweekFooterLogo from '../assets/newsweek-footer-logo.svg';
+import '../styles/footer.css';
 export default function Footer(){
   return(
     <div className='footer'>

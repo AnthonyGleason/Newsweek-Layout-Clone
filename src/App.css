@@ -3,4 +3,5 @@
   height: max-content;
   display: flex;
   flex-direction: column;
+  background-color: rgb(238, 236, 236);
 }
