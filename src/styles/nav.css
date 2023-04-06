@@ -103,7 +103,7 @@
 @media only screen and (max-height: 600px){
   .nav-subscribe,
   .nav-title{
-    font-size: 10px;
+    font-size: 8px;
   }
   .nav-search-icon{
     height: 30px;
@@ -118,8 +118,8 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  padding: 10px;
   text-align: center;
+  padding: 5px;
 }
 
 .nav-search-icon {

@@ -5,7 +5,7 @@ export default function Footer(){
   return(
     <div className='footer'>
       <div className='footer-nav'>
-        <img src={newsweekFooterLogo} alt='newsweek footer logo'/>
+        <img className='pointer' src={newsweekFooterLogo} alt='newsweek footer logo'/>
         <div className='social-media-buttons'>
           <img />
           <img />
