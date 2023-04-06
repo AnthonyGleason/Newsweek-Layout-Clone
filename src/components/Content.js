@@ -1,6 +1,7 @@
 import React from 'react';
 import Article from '../components/Article';
 import '../styles/content.css';
+import newsweekSmallLogo from '../assets/newsweek-small-logo.png';
 //get article data
 import getArticles from '../scripts/getArticles';
 const articles = getArticles();
@@ -13,34 +14,34 @@ export default function Content(){
   return(
     <div className='content'>
       <div className='section-one'>
-        <img />
+        <img src={newsweekSmallLogo} alt='newsweek small logo' />
         <div>LIFE</div>
       </div>
       <div className='section-two'>
         {
           sectionTwoArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img}/>)
+            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
       </div>
       <div className='section-three'>
         {
           sectionThreeArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img}/>)
+            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
       </div>
       <div className='section-four'>
         {
           sectionFourArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img}/>)
+            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article-alt'/>)
           })
         }
       </div>
       <div className='section-five'>
         {
           sectionFiveArticles.map((i)=>{
-            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img}/>)
+            return(<Article title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
       </div>
