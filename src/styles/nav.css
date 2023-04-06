@@ -56,7 +56,21 @@
   gap: 20px;
   width: 100%;
 }
-/* hides the login button on smaller mobile devices */
+
+@media only screen and (min-width: 441px) and (min-height: 601px) {
+  .nav-search-icon{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .nav-search-icon{
+    height: 30px;
+    width: 30px;
+  }
+} 
+
 @media only screen and (max-width: 444px) {
   .nav-login {
     display: none;
@@ -66,12 +80,13 @@
 @media only screen and (min-width: 445px) {
   .nav-login {
     display: flex;
+    font-size: 1.5vh;
   }
 }
 
+
 .nav-login {
   font-weight: 700;
-  font-size: 14px;
   height: 100%;
   margin-bottom: 5px;
   padding-top: 5px;
@@ -80,35 +95,6 @@
   justify-content: center;
   align-items: center;
   border-right: 1.5px solid #c4c4c4;
-}
-
-@media only screen and (max-width: 440px) and (min-height: 601px){
-  .nav-subscribe,
-  .nav-title {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (min-width: 441px) and (min-height: 601px){
-  .nav-subscribe,
-  .nav-title {
-    font-size: 14px;
-  }
-  .nav-search-icon{
-    height: 40px;
-    width: 40px;
-  }
-}
-
-@media only screen and (max-height: 600px){
-  .nav-subscribe,
-  .nav-title{
-    font-size: 8px;
-  }
-  .nav-search-icon{
-    height: 30px;
-    width: 30px;
-  }
 }
 
 .nav-subscribe {
@@ -120,6 +106,7 @@
   font-weight: 700;
   text-align: center;
   padding: 5px;
+  font-size: 1.5vh;
 }
 
 .nav-search-icon {
