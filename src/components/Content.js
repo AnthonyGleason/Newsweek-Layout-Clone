@@ -57,7 +57,7 @@ export default function Content(){
           <li>8</li>
           <li>9</li>
         </ul>
-        <div className='page-next pointer'>{'NEXT >'}</div>
+        <button className='page-next pointer hover'>{'NEXT >'}</button>
       </div>
     </div>
   )
