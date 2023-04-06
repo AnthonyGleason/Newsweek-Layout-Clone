@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/newsweek-clone/static/css/main.fbb3d28b.css",
-    "main.js": "/newsweek-clone/static/js/main.4a998908.js",
+    "main.css": "/newsweek-clone/static/css/main.8c24438a.css",
+    "main.js": "/newsweek-clone/static/js/main.109ab032.js",
     "static/js/787.6d366c5e.chunk.js": "/newsweek-clone/static/js/787.6d366c5e.chunk.js",
     "static/media/art2.webp": "/newsweek-clone/static/media/art2.5781811be2b55005e026.webp",
     "static/media/art6.webp": "/newsweek-clone/static/media/art6.309dd1ca70d315c1817e.webp",
@@ -22,12 +22,12 @@
     "index.html": "/newsweek-clone/index.html",
     "static/media/search-icon-nav.svg": "/newsweek-clone/static/media/search-icon-nav.9623745dd777f6fc778c6992110491fd.svg",
     "static/media/navDots.svg": "/newsweek-clone/static/media/navDots.10029fb18230273fb6ac0fd79df9900a.svg",
-    "main.fbb3d28b.css.map": "/newsweek-clone/static/css/main.fbb3d28b.css.map",
-    "main.4a998908.js.map": "/newsweek-clone/static/js/main.4a998908.js.map",
+    "main.8c24438a.css.map": "/newsweek-clone/static/css/main.8c24438a.css.map",
+    "main.109ab032.js.map": "/newsweek-clone/static/js/main.109ab032.js.map",
     "787.6d366c5e.chunk.js.map": "/newsweek-clone/static/js/787.6d366c5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbb3d28b.css",
-    "static/js/main.4a998908.js"
+    "static/css/main.8c24438a.css",
+    "static/js/main.109ab032.js"
   ]
 }
