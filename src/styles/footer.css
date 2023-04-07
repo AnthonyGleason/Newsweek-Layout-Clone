@@ -226,9 +226,12 @@
   font-weight: 700;
 }
 .credits{
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 20px;
+  text-align: center;
 }
 form input{
   font-size: 14px;
