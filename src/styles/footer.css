@@ -188,6 +188,9 @@
 }
 .footer-magazine .footer-title{
   grid-area: magTitle;
+  text-align: start;
+  display: flex;
+  align-items: center;
 }
 .magazine-date{
   grid-area: magDate;
