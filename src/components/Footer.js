@@ -44,58 +44,54 @@ export default function Footer(){
         </div>
       </div>
       <div className='footer-content'>
-        <div className='footer-section-1'>
-          <ul className='footer-topics'>
+        <ul className='footer-topics'>
+          {
+            topics.map((topic)=>{
+              return(
+                <li className='footer-title'>{topic}<img src={redArrowRight} alt='red arrow right' /></li>
+              )
+            })
+          }
+        </ul>
+        <div className='footer-subscriptions'>
+          <div className='footer-title'>Subscriptions</div>
+          <ul className='footer-subscription-menu'>
+            <li>Digital+ Monthly (Ad Free Trial) <span className='yellow'>$1.00</span></li>
+            <li>Digital+ Yearly $49.00</li>
+            <li>Premium Monthly $9.99</li>
+            <li>Premium Yearly $99</li>
+          </ul>
+        </div>
+        <div className='footer-newsletter'>
+          <div className='footer-title'>Newsletters in your inbox <a href='/'><u>See all</u></a></div>
+          <ul className='footer-newsletter-content'>
             {
-              topics.map((topic)=>{
+              newsletters.map((item)=>{
                 return(
-                  <li className='footer-title'>{topic}<img src={redArrowRight} alt='red arrow right' /></li>
+                  <li>
+                    <input type="checkbox" defaultChecked/>
+                    <div className='footer-news'>{item}</div>
+                    <a href='/' className='yellow'><u>See Sample</u></a>
+                  </li>
                 )
               })
             }
           </ul>
-          <div className='footer-subscriptions'>
-            <div className='footer-title'>Subscriptions</div>
-            <ul className='footer-subscription-menu'>
-              <li>Digital+ Monthly (Ad Free Trial) $1.00</li>
-              <li>Digital+ Yearly $49.00</li>
-              <li>Premium Monthly $9.99</li>
-              <li>Premium Yearly $99</li>
-            </ul>
+          <form method='' action=''>
+            <input placeholder='Email address' type='email'/>
+            <button className='pointer' type='submit'>Sign up now</button>
+          </form>
+          <div className='footer-newsletter-terms'>
+            You can unsubscribe at any time.<br />
+            By signing up you are agreeing to our <u className='pointer'>Terms of Service</u> and <u className='pointer'>Privacy Policy</u>
           </div>
         </div>
-        <div className='footer-section-2'>
-          <div className='footer-newsletter'>
-            <div className='footer-title'>Newsletters in your inbox <a href='/'>See all</a></div>
-            <ul className='footer-newsletter-content'>
-              {
-                newsletters.map((item)=>{
-                  return(
-                    <li>
-                      <input type="checkbox" checked/>
-                      <div className='footer-news'>{item}</div>
-                      <a href='/'>See Sample</a>
-                    </li>
-                  )
-                })
-              }
-            </ul>
-            <form method='' action=''>
-              <input placeholder='Email address' type='email'/>
-              <button type='submit'>Sign up now</button>
-            </form>
-            <div className='footer-newsletter-terms'>
-              You can unsubscribe at any time.<br />
-              By signing up you are agreeing to our Terms of Service and Privacy Policy 
-            </div>
-          </div>
-          <div className='footer-magazine'>
-            <div className='footer-title'>In The Magazine</div>
-            <img src={magazineCover} alt='april 14th 2023 issue' />
-            <div className='magazine-date'>
-              April 14<br />
-              2023 Issue
-            </div>
+        <div className='footer-magazine'>
+          <div className='footer-title'>In The Magazine</div>
+          <img src={magazineCover} alt='april 14th 2023 issue' />
+          <div className='magazine-date pointer'>
+            April 14<br />
+            2023 Issue
           </div>
         </div>
       </div>
@@ -128,7 +124,7 @@ export default function Footer(){
         </div>
         <div className="credits">
           A Newsweek Clone Recreated By&nbsp;
-          <a href="https://github.com/antinf" className='underline'>Anthony Infortunio</a>
+          <a href="https://github.com/antinf" className='pointer'><u>Anthony Infortunio</u></a>
         </div>
       </div>
     </div>
