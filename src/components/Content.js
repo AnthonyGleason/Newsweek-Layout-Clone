@@ -14,8 +14,8 @@ export default function Content(){
   return(
     <div className='content'>
       <div className='section-one'>
-        <img src={newsweekSmallLogo} alt='newsweek small logo' />
-        <div>LIFE</div>
+        <img className='pointer' src={newsweekSmallLogo} alt='newsweek small logo' />
+        <div className='pointer'>LIFE</div>
       </div>
       <div className='section-two'>
         {

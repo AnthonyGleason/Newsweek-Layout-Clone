@@ -37,10 +37,10 @@ export default function Footer(){
       <div className='footer-nav'>
         <img className='pointer' src={newsweekFooterLogo} alt='newsweek footer logo'/>
         <div className='social-media-buttons'>
-          <img src={linkedinLogo} alt='linkedin logo'/>
-          <img src={instagramLogo} alt='instagram logo'/>
-          <img src={twitterLogo} alt='twitter logo'/>
-          <img src={facebookLogo} alt='facebook logo' />
+          <img src={linkedinLogo} onClick={()=>{window.location.href='https://www.linkedin.com/company/newsweek'}} alt='linkedin logo'/>
+          <img src={instagramLogo} onClick={()=>{window.location.href='https://www.instagram.com/newsweek/'}} alt='instagram logo'/>
+          <img src={twitterLogo} onClick={()=>{window.location.href='https://twitter.com/Newsweek'}} alt='twitter logo'/>
+          <img src={facebookLogo} onClick={()=>{window.location.href='https://www.facebook.com/Newsweek'}} alt='facebook logo' />
         </div>
       </div>
       <div className='footer-content'>
@@ -56,10 +56,10 @@ export default function Footer(){
         <div className='footer-subscriptions'>
           <div className='footer-title'>Subscriptions</div>
           <ul className='footer-subscription-menu'>
-            <li>Digital+ Monthly (Ad Free Trial) <span className='yellow'>$1.00</span></li>
-            <li>Digital+ Yearly $49.00</li>
-            <li>Premium Monthly $9.99</li>
-            <li>Premium Yearly $99</li>
+            <li className='pointer'>Digital+ Monthly (Ad Free Trial) <span className='yellow'>$1.00</span></li>
+            <li className='pointer'>Digital+ Yearly $49.00</li>
+            <li className='pointer'>Premium Monthly $9.99</li>
+            <li className='pointer'>Premium Yearly $99</li>
           </ul>
         </div>
         <div className='footer-newsletter'>
@@ -69,8 +69,8 @@ export default function Footer(){
               newsletters.map((item)=>{
                 return(
                   <li>
-                    <input type="checkbox" defaultChecked/>
-                    <div className='footer-news'>{item}</div>
+                    <input className='pointer' type="checkbox" defaultChecked/>
+                    <div className='footer-news pointer'>{item}</div>
                     <a href='/' className='yellow'><u>See Sample</u></a>
                   </li>
                 )
@@ -88,7 +88,7 @@ export default function Footer(){
         </div>
         <div className='footer-magazine'>
           <div className='footer-title'>In The Magazine</div>
-          <img src={magazineCover} alt='april 14th 2023 issue' />
+          <img className='pointer' src={magazineCover} alt='april 14th 2023 issue' />
           <div className='magazine-date pointer'>
             April 14<br />
             2023 Issue
@@ -100,25 +100,25 @@ export default function Footer(){
         <ul>
           <li className='footer-category'>Company </li>
           {footerCompany.map((i) => {
-            return <li>{i}</li>;
+            return <li className='pointer'>{i}</li>;
           })}
         </ul>
         <ul>
           <li className='footer-category'>Editions: </li>
           {footerEditions.map((i) => {
-            return <li>{i}</li>;
+            return <li className='pointer'>{i}</li>;
           })}
         </ul>
         <ul>
           <li className='footer-category'>Contact </li>
           {footerContact.map((i) => {
-            return <li>{i}</li>;
+            return <li className='pointer'>{i}</li>;
           })}
         </ul>
         <ul>
           <li className='footer-category'>Terms Of Use </li>
           {footerTerms.map((i) => {
-            return <li>{i}</li>;
+            return <li className='pointer'>{i}</li>;
           })}
         </ul>
         </div>
