@@ -42,6 +42,12 @@
   .article-desc {
     font-size: 12px;
   }
+  .article-alt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 501px) and (max-width: 1206px) {
@@ -52,6 +58,15 @@
   .article-desc {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .article-category{
+    max-width: max-content;
+  }
+  .article-alt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {

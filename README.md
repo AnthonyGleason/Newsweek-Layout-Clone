@@ -2,9 +2,9 @@ In this project, I've challenged myself to clone and improve the layout of the p
 
 Tech stack: I'm using React.js, HTML, CSS, and JavaScript for this project.
 
-Instructions: To run the project locally, clone this repository and run 'npm install' in your terminal to install required dependencies. After that you can type 'npm run start' to run the project locally. This project runs locally at the default port 3000.
-
 Live Demo: <a href='https://antinf.github.io/Responsive-Newsweek-React.js-Clone/'>Press Here</a> 
+
+Local Installation Instructions: To run the project locally, clone this repository and run 'npm install' in your terminal to install required dependencies. After that you can type 'npm run start' to run the project locally. This project runs at the default port 3000.
 <br></br>
 Screenshots:
 ![Screenshot (7)](https://user-images.githubusercontent.com/87878255/230656683-b81ba4eb-045f-4ade-9bbc-dfee740d2782.png)
