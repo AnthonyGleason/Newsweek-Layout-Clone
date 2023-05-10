@@ -12,40 +12,40 @@ const sectionFourArticles = articles.splice(0,3);
 const sectionFiveArticles = articles.splice(0,4);
 export default function Content(){
   return(
-    <div className='content'>
-      <div className='section-one'>
+    <main className='content'>
+      <section className='section-one'>
         <img className='pointer' src={newsweekSmallLogo} alt='newsweek small logo' />
-        <div className='pointer'>LIFE</div>
-      </div>
-      <div className='section-two'>
+        <h2 className='pointer'>LIFE</h2>
+      </section>
+      <section className='section-two'>
         {
           sectionTwoArticles.map((i)=>{
             return(<Article key={sectionTwoArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
-      </div>
-      <div className='section-three'>
+      </section>
+      <section className='section-three'>
         {
           sectionThreeArticles.map((i)=>{
             return(<Article key={sectionThreeArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
-      </div>
-      <div className='section-four'>
+      </section>
+      <section className='section-four'>
         {
           sectionFourArticles.map((i)=>{
             return(<Article key={sectionFourArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article-alt'/>)
           })
         }
-      </div>
-      <div className='section-five'>
+      </section>
+      <section className='section-five'>
         {
           sectionFiveArticles.map((i)=>{
             return(<Article key={sectionFiveArticles.indexOf(i)} title={i.title} desc={i.desc} category={i.category} img={i.img} className='article'/>)
           })
         }
-      </div>
-      <div className='section-six'>
+      </section>
+      <section className='section-six'>
         <ul className='page-numbers pointer'>
           <li>1</li>
           <li>2</li>
@@ -58,7 +58,7 @@ export default function Content(){
           <li>9</li>
         </ul>
         <button className='page-next pointer hover'>{'NEXT >'}</button>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
