@@ -31,10 +31,10 @@ export default function Footer(){
   const footerTerms = [
     'Cookie Policy','Copyright','Privacy Policy',
     'Terms & Conditions','Terms of Sale'
-];
+  ];
   return(
-    <div className='footer'>
-      <div className='footer-nav'>
+    <footer className='footer'>
+      <nav className='footer-nav'>
         <img className='pointer' src={newsweekFooterLogo} alt='newsweek footer logo'/>
         <div className='social-media-buttons'>
           <img src={linkedinLogo} onClick={()=>{window.location.href='https://www.linkedin.com/company/newsweek'}} alt='linkedin logo'/>
@@ -42,8 +42,8 @@ export default function Footer(){
           <img src={twitterLogo} onClick={()=>{window.location.href='https://twitter.com/Newsweek'}} alt='twitter logo'/>
           <img src={facebookLogo} onClick={()=>{window.location.href='https://www.facebook.com/Newsweek'}} alt='facebook logo' />
         </div>
-      </div>
-      <div className='footer-content'>
+      </nav>
+      <main className='footer-content'>
         <ul className='footer-topics'>
           {
             topics.map((topic)=>{
@@ -53,24 +53,24 @@ export default function Footer(){
             })
           }
         </ul>
-        <div className='footer-subscriptions'>
-          <div className='footer-title'>Subscriptions</div>
+        <section className='footer-subscriptions'>
+          <h3 className='footer-title'>Subscriptions</h3>
           <ul className='footer-subscription-menu'>
             <li className='pointer'>Digital+ Monthly (Ad Free Trial) <span className='yellow'>$1.00</span></li>
             <li className='pointer'>Digital+ Yearly $49.00</li>
             <li className='pointer'>Premium Monthly $9.99</li>
             <li className='pointer'>Premium Yearly $99</li>
           </ul>
-        </div>
-        <div className='footer-newsletter'>
-          <div className='footer-title'>Newsletters in your inbox <a href='/'><u>See all</u></a></div>
+        </section>
+        <section className='footer-newsletter'>
+          <h3 className='footer-title'>Newsletters in your inbox <a href='/'><u>See all</u></a></h3>
           <ul className='footer-newsletter-content'>
             {
               newsletters.map((item)=>{
                 return(
                   <li>
                     <input className='pointer' type="checkbox" defaultChecked/>
-                    <div className='footer-news pointer'>{item}</div>
+                    <p className='footer-news pointer'>{item}</p>
                     <a href='/' className='yellow'><u>See Sample</u></a>
                   </li>
                 )
@@ -81,53 +81,53 @@ export default function Footer(){
             <input placeholder='Email address' type='email'/>
             <button className='pointer' type='submit'>Sign up now</button>
           </form>
-          <div className='footer-newsletter-terms'>
+          <p className='footer-newsletter-terms'>
             You can unsubscribe at any time.<br />
             By signing up you are agreeing to our <u className='pointer'>Terms of Service</u> and <u className='pointer'>Privacy Policy</u>
-          </div>
-        </div>
-        <div className='footer-magazine'>
-          <div className='footer-title'>In The Magazine</div>
+          </p>
+        </section>
+        <section className='footer-magazine'>
+          <h3 className='footer-title'>In The Magazine</h3>
           <img className='pointer' src={magazineCover} alt='april 14th 2023 issue' />
-          <div className='magazine-date pointer'>
+          <p className='magazine-date pointer'>
             April 14<br />
             2023 Issue
-          </div>
+          </p>
+        </section>
+      </main>
+      <section className='footer-bottom'>
+        <div className="footer-menu">
+          <ul>
+            <li className='footer-category'>Company </li>
+            {footerCompany.map((i) => {
+              return <li className='pointer'>{i}</li>;
+            })}
+          </ul>
+          <ul>
+            <li className='footer-category'>Editions: </li>
+            {footerEditions.map((i) => {
+              return <li className='pointer'>{i}</li>;
+            })}
+          </ul>
+          <ul>
+            <li className='footer-category'>Contact </li>
+            {footerContact.map((i) => {
+              return <li className='pointer'>{i}</li>;
+            })}
+          </ul>
+          <ul>
+            <li className='footer-category'>Terms Of Use </li>
+            {footerTerms.map((i) => {
+              return <li className='pointer'>{i}</li>;
+            })}
+          </ul>
         </div>
-      </div>
-      <div className='footer-bottom'>
-      <div className="footer-menu">
-        <ul>
-          <li className='footer-category'>Company </li>
-          {footerCompany.map((i) => {
-            return <li className='pointer'>{i}</li>;
-          })}
-        </ul>
-        <ul>
-          <li className='footer-category'>Editions: </li>
-          {footerEditions.map((i) => {
-            return <li className='pointer'>{i}</li>;
-          })}
-        </ul>
-        <ul>
-          <li className='footer-category'>Contact </li>
-          {footerContact.map((i) => {
-            return <li className='pointer'>{i}</li>;
-          })}
-        </ul>
-        <ul>
-          <li className='footer-category'>Terms Of Use </li>
-          {footerTerms.map((i) => {
-            return <li className='pointer'>{i}</li>;
-          })}
-        </ul>
-        </div>
-        <div className="credits">
+        <p className="credits">
           © 2023 NEWSWEEK DIGITAL LLC  <br />
           Newsweek Clone Recreated By&nbsp;
           <a href="https://github.com/antinf" className='pointer'><u>Anthony Infortunio</u></a>
-        </div>
-      </div>
-    </div>
+        </p>
+      </section>
+    </footer>
   )
 }
