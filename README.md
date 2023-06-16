@@ -1,4 +1,4 @@
-In this project, I've challenged myself to clone and improve the layout of the popular news website Newsweek using React.js and without using any CSS frameworks. My goal was to replicate the site, but also change some of the layout and styling to improve the user experience. This clone is a fully responsive website that looks good even on mobile devices as narrow as 320px width. 
+In this project, I've challenged myself to clone and improve the layout of the popular news website Newsweek using React.js and without using any CSS frameworks. My goal was to replicate the site, but also change some of the layout and styling to improve the user experience. This clone is a responsive website that looks good even on mobile devices as narrow as 320px width. 
 
 Tech stack: I'm using React.js, HTML, CSS, and JavaScript for this project.
 
