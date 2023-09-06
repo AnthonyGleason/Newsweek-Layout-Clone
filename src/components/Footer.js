@@ -122,11 +122,6 @@ export default function Footer(){
             })}
           </ul>
         </div>
-        <p className="credits">
-          © 2023 NEWSWEEK DIGITAL LLC  <br />
-          Newsweek Clone Recreated By&nbsp;
-          <a href="https://github.com/antinf" className='pointer'><u>Anthony Infortunio</u></a>
-        </p>
       </section>
     </footer>
   )
