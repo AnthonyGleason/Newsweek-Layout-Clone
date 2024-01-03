@@ -1,6 +1,6 @@
 # Newsweek-Layout-Clone
 
-In this project, I've challenged myself to clone and improve the layout of the popular news website Newsweek using React.js and without using any CSS frameworks. My goal was to replicate the site, but also change the layout and styling to improve the user experience. The result is a user-friendly responsive web application that looks good even on mobile devices as narrow as 320px width. 
+In this project, I've challenged myself to clone and improve the layout of the popular news website Newsweek using React and without using any CSS frameworks. My goal was to replicate the site, but also change the layout and styling to improve the user experience. The result is a user-friendly responsive web application that looks good even on mobile devices as narrow as 320px width. 
 
 <h3>Live Demo: <a href='https://anthonygleason.github.io/Newsweek-Layout-Clone/'>Press Here</a></h3>
 <h2>Tech Stack:</h2>
@@ -10,7 +10,7 @@ In this project, I've challenged myself to clone and improve the layout of the p
     <img alt="Javascript" height=40rem width=40rem src="https://api.iconify.design/logos/javascript.svg?download=1" />
   </span>
   <br />
-  React.js, Javascript
+  React, Javascript
 <br />
 <br />
 <h2>Local Installation Instructions:</h2>
