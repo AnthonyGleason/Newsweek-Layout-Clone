@@ -7,7 +7,7 @@ In this project, I've challenged myself to clone and improve the layout of the p
 <h3>Front-end:</h3>
   <span>
     <img alt="React" height=40rem width=40rem src="https://api.iconify.design/logos/react.svg?download=1" />
-    <img alt="Javascript" height=40rem width=40rem src="https://api.iconify.design/logos/javascript.svg?download=1" />
+    <img alt="JavaScript" height=40rem width=40rem src="https://api.iconify.design/logos/javascript.svg?download=1" />
   </span>
   <br />
   React, Javascript
